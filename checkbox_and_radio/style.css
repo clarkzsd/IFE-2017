@@ -48,18 +48,18 @@ input[type="checkbox"]:checked + .demo1_checkbox::before {
 }
 
 input[type="radio"] + .demo2_radio {
-  background-position: -25px -32px;
-}
-
-input[type="checkbox"] + .demo2_checkbox {
   background-position: -23px -10px;
 }
 
+input[type="checkbox"] + .demo2_checkbox {
+  background-position: -25px -32px;
+}
+
 input[type="radio"]:checked + .demo2_radio {
-  background-position: -60px -32px;
+  background-position: -58px -10px;
 }
 
 input[type="checkbox"]:checked + .demo2_checkbox {
-  background-position: -58px -10px;
+  background-position: -60px -32px;
 }
 
