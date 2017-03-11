@@ -1,0 +1,9 @@
+.targetArea {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  background-color:rgba(128, 128, 128, 0.61);
+  line-height: 40px;
+  border:1px rgb(128, 128, 128, 0.47) solid;
+  border-radius: 5px;
+}
