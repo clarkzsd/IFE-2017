@@ -1,0 +1,51 @@
+body {
+  padding: 20px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.container {
+  overflow: auto;
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #999;
+}
+
+.container>* {
+  padding: 20px;
+  border: 1px solid #999;
+  background-color: #ffffff;
+}
+
+.teamInfo {
+  float: left;
+  width: 200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.teamIntro {
+  margin-left: 220px;
+  margin-right: 140px;
+}
+
+.teamInfo>p {
+  float: right;
+}
+
+.teammateLogo {
+  padding: 10px 20px;
+  float: right;
+  width: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.teammateLogo>img {
+  margin: 10px 0;
+}
