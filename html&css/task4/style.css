@@ -1,14 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  position: relative;
-}
-
 .container {
   width: 400px;
   height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -200px;
   background-color: #ccc;
+}
+
+.sector {
+  background: none repeat scroll 0 0 #fc0;
+  height: 50px;
+  width: 50px;
+}
+
+.leftTop {
+  -webkit-border-radius: 0 0 50px 0;
+  -moz-border-radius: 0 0 50px 0;
+  border-radius: 0 0 50px 0;
+}
+
+.RightBottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-border-radius: 50px 0 0 0;
+  -moz-border-radius: 50px 0 0 0;
+  border-radius: 50px 0 0 0;
 }
