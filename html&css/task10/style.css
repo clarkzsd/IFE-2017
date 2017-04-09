@@ -1,13 +1,13 @@
 body {
-  margin: 0px;
   display: flex;
+  margin: 0px;
   padding: 20px;
   align-items: center;
   justify-content: space-between;
 }
 
 div {
-  width: 150px;
+  width: 148px;
   border: 1px solid red;
 }
 
@@ -31,8 +31,6 @@ div {
 @media screen and (max-width:640px) {
   body {
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
     align-items: flex-start;
   }
   .div4 {
