@@ -1,0 +1,170 @@
+html {
+  font-size: 20px;
+}
+
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-user-select: none;
+  /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+}
+
+body {
+  background-color: #c0c0c0;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+}
+
+a,
+img {
+  -webkit-touch-callout: none;
+  /* 禁止长按链接与图片弹出菜单 */
+}
+
+body>* {
+  background-color: white;
+}
+
+.cutting-line {
+  padding: 0 16px;
+}
+
+.small-title {
+  font-size: 16px;
+}
+
+
+/*header*/
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: #8ACFD5;
+  color: white;
+}
+
+.returnBtn {
+  position: absolute;
+  left: 15px;
+}
+
+
+/*nav*/
+
+nav,
+.tagmenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav>div {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  width: 20%;
+}
+
+.selected-nav {
+  border-bottom: 2px solid #26d9d0;
+}
+
+
+/*slider*/
+
+.slider {
+  height: 200px;
+}
+
+.slider>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*tagnav*/
+
+.tag-item>img {
+  height: 50px;
+  width: 50px;
+}
+
+
+/*columnnav*/
+
+.columnnav>div {
+  margin: 20px;
+}
+
+
+/*module*/
+
+.module {
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.doc-item {
+  padding: 5px 0;
+  background-color: #F8F8F8;
+  width: 45%;
+  text-align: center;
+}
+
+
+/*common flex*/
+
+.row-container {
+  display: flex;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.col-4 {
+  flex: 1;
+}
+
+.col-8 {
+  flex: 3;
+}
+
+/*news module*/
+.news-item {
+  position: relative;
+}
+
+.news-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.news-info {
+  color: #797979;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.img-row {
+  justify-content: center;
+}
+
+.img-row > img {
+  margin: 20px;
+}
+
+/*footer*/
