@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+}
+
+body {
+  counter-reset: section;
+}
+
+
+/*bgcolor*/
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+
+/*table style*/
+
+tr:nth-child(odd) {
+  background-color: #c3c3c3;
+}
+
+tr:nth-child(-n+4) {
+  color: red;
+}
+
+tr:first-child {
+  background-color: black;
+  color: white;
+}
+
+td:first-child::before {
+  counter-increment: section;
+  content: counter(section) ".";
+}
+
+
+/*input style*/
+
+input {
+  width: 50px;
+}
+
+.ani-target-widen {
+  animation-duration: 2s;
+  animation-name: widen;
+  animation-fill-mode: forwards;
+}
+
+.ani-target-narrow {
+  animation-duration: 2s;
+  animation-name: narrow;
+  animation-fill-mode: forwards;
+}
+
+@keyframes widen {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 120px;
+  }
+}
+
+@keyframes narrow {
+  from {
+    width: 120px;
+  }
+  to {
+    width: 50px;
+  }
+}
+
+
+/*slider*/
+
+.slider-wrap {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider-img-container {
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500%;
+  height: 100%;
+  transform: translate(0, 0);
+  animation: slide 10s linear infinite;
+}
+
+.slider-img-container> div{
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-20%, 0);
+  }
+  35% {
+    transform: translate(-20%, 0);
+  }
+  40% {
+    transform: translate(-40%, 0);
+  }
+  55% {
+    transform: translate(-40%, 0);
+  }
+  60% {
+    transform: translate(-60%, 0);
+  }
+  75% {
+    transform: translate(-60%, 0);
+  }
+  80% {
+    transform: translate(-80%, 0);
+  }
+  95% {
+    transform: translate(-80%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
