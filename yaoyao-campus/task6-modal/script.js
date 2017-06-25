@@ -10,31 +10,30 @@ class Modal {
   }
 
   hide() {
-    this.element.classList.remove('active');
-    this.element.classList.add('hidden');
+    this.element.style.display = 'none';
     this.body.classList.remove('modal-open');
     this.isShown = false;
   }
 
   show() {
-    this.element.classList.remove('hidden');
-    this.element.classList.add('active');
+    this.element.style.display = 'initial';
     this.body.classList.add('modal-open');
     this.isShown = true;
   }
 
   hideModal(trigger) {
-    if (Array.isArray(trigger)) {
+    return Array.isArray(trigger) ?
       trigger.forEach((ele) => {
-        ele.addEventListener('click', () => {
-          this.hide();
-        }, false);
-      });
-    } else {
-      trigger.addEventListener('click', () => {
-        this.hide();
-      }, false);
-    }
+        this.registerHideTrigger(ele);
+      })
+      :
+      this.registerHideTrigger(trigger);
+  }
+
+  registerHideTrigger(trigger) {
+    return trigger.addEventListener('click', () => {
+      this.hide();
+    }, false);
   }
 }
 

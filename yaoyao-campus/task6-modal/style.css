@@ -16,10 +16,6 @@ body {
   display: initial;
 }
 
-.hidden {
-  display: none;
-}
-
 .btn-wrap {
   height: 800px;
   display: flex;
@@ -28,6 +24,7 @@ body {
 }
 
 .modal-wrap {
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
