@@ -1,0 +1,27 @@
+{
+  "name": "ife-2017",
+  "version": "1.0.0",
+  "description": "ife-2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkzsd/IFE-2017.git"
+  },
+  "keywords": [
+    "ife"
+  ],
+  "author": "clarkzsd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarkzsd/IFE-2017/issues"
+  },
+  "homepage": "https://github.com/clarkzsd/IFE-2017#readme",
+  "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.0"
+  }
+}
